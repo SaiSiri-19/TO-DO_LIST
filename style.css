@@ -1,0 +1,116 @@
+*{
+		margin:0;
+	padding:0;
+	fint-family:'Poppins',sans-serif;
+	box-sizing:border-box;
+	
+}
+
+.container
+{
+	width:100%;
+	min-height: 100vh;
+	padding: 5px;
+	background-image:url("https://t4.ftcdn.net/jpg/01/65/98/53/360_F_165985319_GPU5ALSAgJkkJ0rRE2V1d8plcen3aANg.jpg");
+	background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+.todo-app
+{
+	width:100%;
+	max-width:400px;
+	background-image: url("https://img.freepik.com/free-vector/beautiful-book-club-pattern-illustration_23-2149330102.jpg");
+	margin:100px auto 20px;
+	position: sticky;
+	text-align: center;
+	
+}
+.todo-app h2
+{
+	
+	font-size: 50px;
+
+}
+.row
+{
+	padding:10px 40px 30px ;
+	display:flex;
+	
+	
+}
+input
+{
+	flex: 1;
+	border: none;
+	outline: none;
+	background-color:white;
+	font-size: 15px;
+
+}
+button
+{
+	color:maroon;
+	background-color:#FFC300;
+	padding: 7px 10px;
+	font-size:16px;
+	cursor:pointer;
+	border-radius: 50%;
+	display: inline-flex;
+	float: left;
+    text-align: center;
+    text-decoration: none;
+    border-color: ghostwhite;
+}
+ul li{
+ list-style:none;
+ font-size: 20px;
+ padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position:relative;
+background-image:url("https://media.istockphoto.com/id/910998960/vector/notebook-paper-sheet.jpg?s=612x612&w=0&k=20&c=LE36wYJOTIis6GlENlZ5gkjIFmIUF9cMWJuRxZ7874Q=") ;
+background-size: 100% 100%;
+    background-repeat:no-repeat;
+    
+}
+ul li::before
+{
+	content:'';
+	position: absolute;
+	height: 28px;
+	width:28px ;
+	background-image: url("https://i.pinimg.com/736x/dc/a2/1b/dca21be92ef10ecd0b4974fa648d6df3.jpg");
+	background-size: cover;
+	background-position: center;
+	top: 10px;
+	left: 50px;
+
+
+}
+ul li.checked
+{
+	background-color: #336EFF ;
+	background:linear-gradient(#116002,#2FEB0E);
+	text-decoration: line-through;
+
+}
+ul li.checked::before
+{
+		background-image: url("https://cdn.vectorstock.com/i/1000x1000/89/47/green-check-mark-icon-in-a-circle-vector-21248947.webp");
+}
+ul li span
+{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+
+}
+ul li span:hover
+{
+	
+}
